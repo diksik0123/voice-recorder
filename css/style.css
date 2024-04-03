@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tac+One&display=swap');
+
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.tac-one-regular {
+  font-family: "Tac One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: radial-gradient(circle, rgba(34,193,195,1) 7%, rgba(253,187,45,1) 85%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
+}
+
+
+.gradient {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(334deg, #fd6a8a, #7525e2, #13f71e);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+  position: fixed;
+  z-index: -1;
+}
+
+.image-bg1{
+  opacity: 0.10;
+  height: 150vh;
+  width: 120%;
+  bottom: 25%;
+  right: 15%;
+  position: fixed;
+  z-index: -1;
+
+}
+
+.image-bg2{
+  opacity: 0.10;
+  height: 150vh;
+  width: 120%;
+  left: 25%;
+  top: 15%;
+  position: fixed;
+  z-index: -1;
+
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.logo {
+  width: 40px;
+  height: auto; 
+  margin-right: 10px; 
+}
+
+.navbar-brand ,.nav-link{
+    color: black;
+}
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+  color: rgba(253,187,45,1) ;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(253,187,45,1) ;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.box{
+  padding: 20px;
+  width: 70%;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.highlight{
+  padding: 20px;
+  text-align: justify;
+  border: 3px solid #ffff;
+}
+
+.letter-spacing{
+  text-align: justify;
+}
+
+.font-size{
+  font-size: 1.5rem;
+}
+
+.overlay-bg {
+  position: fixed; /* Position the overlay relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: -1; /* Ensure the overlay appears behind other content */
+}
+
+.text-area{
+  width: 100%;
+  text-align: justify;
+}
+
+.shadow{
+  background-color: rgba(253,187,45,1);
+  position: fixed;
+  z-index: -1;
+  bottom: 3px;
+  right: -3px;
+}
+
+.controls{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  gap: 10px;
+;
+}
+
+audio{
+  border-radius: 5px !important;
+  background-color: #f2f6f9;
+}
+.behave{
+  z-index: -1;
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  width: 60px;
+  padding-top: 3px;
+  border-bottom: 2px solid #f9dd94;
+}
