@@ -15,41 +15,53 @@
   <div class="gradient"></div>
   <img class="image-bg1" src="/img/image-bg.svg">
   <img class="image-bg2" src="/img/image-bg.svg">
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid ms-5 me-5">
-        <!-- <img class="img-fluid logo" src="/img/mic.svg" alt="logo for website"> -->
-        <a class="navbar-brand text-white fs-5" href="index.html"><h1 class="tac-one-regular">AudioGuru</h1></a> <!-- Navbar Brand -->
-        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav fw-bold">
-                <li class="nav-item me-4">
-                    <a class="nav-link text-white fs-5 " href="index.html">Home</a>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid ms-3 me-3">
+        <a class="navbar-brand fs-4" href="index.html"><h1 class="tac-one-regular">AudioGuru</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto fw-bold">
+                <li class="nav-item me-3">
+                    <a class="nav-link fs-5 text-white" href="index.html">Home</a>
                 </li>
-                <li class="nav-item ms-3 me-3">
-                    <a class="nav-link text-white fs-5" href="about.html">About</a>
+                <li class="nav-item me-3">
+                    <a class="nav-link fs-5 text-white" href="about.html">About</a>
                 </li>
-                <li class="nav-item ms-3">
-                    <a class="nav-link text-white fs-5" href="speech.html">Voice Recorder</a>
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white" href="speech.html">Voice Recorder</a>
                 </li>
             </ul>
+            <!-- Menu items to be displayed in the hamburger menu -->
+            <div class="navbar-nav d-lg-none"> <!-- Display only on mobile devices -->
+                <a class="nav-link fs-5" href="#">Home</a>
+                <a class="nav-link fs-5" href="about.html">About</a>
+                <a class="nav-link fs-5" href="speech.html">Voice Recorder</a>
+            </div>
         </div>
     </div>
 </nav>
 
 
-      <main>
-        <div class="position-absolute top-50 start-50 translate-middle box ">
-          <div class="highlight mb-3 text-white">
-            <h2 class="text-center fs-1 letter-spacing">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit temporibus optio eius repellendus quos reiciendis quam? Voluptas totam explicabo molestias nisi qui in! Consequuntur dolor incidunt asperiores quia fugit officiis.</h2>
-          </div>
-          <p class="text-center fs-5 mb-4 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores veritatis porro quisquam veniam rem perferendis, eius repellendus minima. Facilis pariatur magnam odio, eveniet sint est quis perspiciatis mollitia accusamus voluptates!.</p>
-
-          <a class="position-absolute top-100 start-50 translate-middle mt-2" href="speech.html">
-            <button type="button" class="button btn btn-primary btn-lg">Start Recording</button>
-            <!-- shadow -->
-            <div class="btn btn-lg shadow">Start Recording</div>
-          </a>
+<div class="container mt-3">
+  <div class="row justify-content-center">
+    <div class="col-md-9">
+      <div class="box text-center">
+        <div class="highlight mb-3 text-white">
+          <h2 class="fs-1 letter-spacing">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit temporibus optio eius repellendus quos reiciendis quam? Voluptas totam explicabo molestias nisi qui in! Consequuntur dolor incidunt asperiores quia fugit officiis.</h2>
         </div>
-      </main>
+        <p class="fs-5 mb-4 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores veritatis porro quisquam veniam rem perferendis, eius repellendus minima. Facilis pariatur</p>
+        <a class="mt-2" href="speech.html">
+        <button type="button" class="button btn btn-primary btn-lg">Start Recording</button>
+   
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
