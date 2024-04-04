@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tac+One&display=swap');
 
 
-
 body {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -11,6 +10,7 @@ body {
   font-variation-settings:
     "wdth" 100;
 }
+
 
 .tac-one-regular {
   font-family: "Tac One", sans-serif;
@@ -101,12 +101,6 @@ body {
   transform-origin: bottom left;
 }
 
-.box{
-  padding: 20px;
-  width: 70%;
-  max-width: 100%;
-  flex-direction: column;
-}
 
 .highlight{
   padding: 20px;
@@ -137,14 +131,6 @@ body {
   text-align: justify;
 }
 
-.shadow{
-  background-color: rgba(253,187,45,1);
-  position: fixed;
-  z-index: -1;
-  bottom: 3px;
-  right: -3px;
-}
-
 .controls{
   display: flex;
   flex-direction: row;
@@ -169,3 +155,4 @@ audio{
   padding-top: 3px;
   border-bottom: 2px solid #f9dd94;
 }
+
