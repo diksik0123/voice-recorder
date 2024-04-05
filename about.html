@@ -22,28 +22,54 @@
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid ms-3 me-3">
         <a class="navbar-brand fs-4" href="index.html"><h1 class="tac-one-regular">AudioGuru</h1></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <!-- hamburger menu -->
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> -->
+
+        <!-- menu items -->
+        <div id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto fw-bold">
-                <li class="nav-item me-3">
+                <li class="nav-item me-3 hideOnMobile">
                     <a class="nav-link fs-5 text-white" href="index.html">Home</a>
                 </li>
-                <li class="nav-item me-3">
+                <li class="nav-item me-3 hideOnMobile">
                     <a class="nav-link fs-5 text-white" href="about.html">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item hideOnMobile">
                     <a class="nav-link fs-5 text-white" href="speech.html">Voice Recorder</a>
                 </li>
-            </ul>
-            <!-- Menu items to be displayed in the hamburger menu -->
-            <div class="navbar-nav d-lg-none"> <!-- Display only on mobile devices -->
-                <a class="nav-link fs-5" href="#">Home</a>
-                <a class="nav-link fs-5" href="about.html">About</a>
-                <a class="nav-link fs-5" href="speech.html">Voice Recorder</a>
-            </div>
-        </div>
+                <li  class="hamburger-menu" onclick="showSidebar()">
+                    <a class="nav-link fs-5" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg></a>
+                </li>
+           </ul>
+    </div>
+
+    <!-- side bar -->
+    <nav class="sidebar">
+      <div class="container">
+          <div>
+              <ul class="fw-bold" style="padding-left: 0rem">
+                  <li onclick="hideSidebar()" style="list-style-type: none;">
+                    <a class="nav-link fs-5" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16">
+                      <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link fs-5 text-white" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link fs-5 text-white" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link fs-5 text-white" href="speech.html">Voice Recorder</a>
+                  </li>
+    
+             </ul>
+      </div>
+</div>
     </div>
 </nav>
 
@@ -79,5 +105,7 @@
             </div>
         </div>
     </main>
+
+    <script src="/js/sidebar.js"></script>
 </body>
 </html>
