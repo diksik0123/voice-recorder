@@ -101,6 +101,47 @@ body {
   transform-origin: bottom left;
 }
 
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.hamburger-menu{
+  display: none;
+ }
+
+@media (max-width: 991px){
+ .hideOnMobile{
+  display: none;
+ }
+ .hamburger-menu{
+  display: block;
+ }
+
+}
+
+@media (max-width: 400px){
+  .sidebar{
+   width: 100%;
+  }
+ }
 
 .highlight{
   padding: 20px;
