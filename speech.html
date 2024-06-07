@@ -19,7 +19,7 @@
 <body>
 <div class="gradient"></div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid ms-3 me-3">
         <a class="navbar-brand fs-4" href="index.html"><h1 class="tac-one-regular">Voice Recorder</h1></a>
 
@@ -31,19 +31,16 @@
         <div id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto fw-bold">
                 <li class="nav-item me-3 hideOnMobile">
-                    <a class="nav-link fs-5 text-white" href="index.html">Home</a>
-                </li>
-                <li class="nav-item me-3 hideOnMobile">
-                    <a class="nav-link fs-5 text-white" href="about.html">About</a>
+                    <a class="nav-link fs-5 text-dark" href="index.html">Home</a>
                 </li>
                 <li class="nav-item hideOnMobile">
-                    <a class="nav-link fs-5 text-white" href="speech.html">Recorder</a>
+                    <a class="nav-link fs-5 text-dark" href="speech.html">Recorder</a>
                 </li>
                 <li  class="hamburger-menu" onclick="showSidebar()">
-                    <a class="nav-link fs-5" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                    </svg></a>
-                </li>
+                  <a class="nav-link fs-5 text-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg></a>
+              </li>
            </ul>
     </div>
 
@@ -58,13 +55,10 @@
                     </svg></a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link fs-5 text-white" href="index.html">Home</a>
+                      <a class="nav-link fs-5" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link fs-5 text-white" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link fs-5 text-white" href="speech.html">Recorder</a>
+                      <a class="nav-link fs-5" href="speech.html">Recorder</a>
                   </li>
     
              </ul>
@@ -76,28 +70,27 @@
       <div class="container mt-3">
         <div class="row">
             <div class="col-md-7">
-                <h3 class="text-white underline">Read the text displayed</h3>
-                <form action="" method="POST">
+                <h3 class=" underline">Read the text displayed</h3>
+                <form action="">
                     <div class="text-area mb-3">
                         <textarea class="form-control" id="text" name="textArea" rows="15"></textarea>
                     </div>
-                    <div class="controls">
+                    <div class="controls mb-3">
                     <button id="startRecord" class="btn btn-primary btn-lg"><span id="startRecord"><i class="fas fa-play"></i></span></button>
                     <button id="stopRecord" class="btn btn-danger btn-lg" disabled><span id="startRecord"><i class="fas fa-stop custom-icon"></i></span></button>
                     <button type="button" id="downloadButton" class="btn btn-success btn-lg" disabled><span id="startRecord"><i class="fas fa-download download-icon"></i></span></button>
                     <!-- <div id="downloadButton" class="btn btn-success btn-lg" style="display: none;"><span id="startRecord"><i class="fas fa-download download-icon"></i></span></div> -->
                     </div>
-
             </div>
             <div class="col-md-5">
-                <h3 class="text-white underline">Scenario</h3>
+                <h3 class=" underline">Scenario</h3>
                 <select class="form-select form-select-lg mb-3" id="mySelect" onchange="checkSelectedValue()">
                     <option value="default">Choose Scenario</option>
                     <option value="sc-one">Scenario 1</option>
                     <option value="sc-two">Scenario 2</option>
                     <option value="sc-three">Scenario 3</option>
                 </select>
-            <h3 class="text-white underline">Recording</h3>
+            <h3 class="underline">Recording</h3>
             <audio controls class="w-100 audio" id="audioPlayer">
 
               </audio>
